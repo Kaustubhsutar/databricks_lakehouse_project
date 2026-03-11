@@ -1,8 +1,8 @@
-# Data Lakehouse and Analytics Project
+# Data Lakehouse and Analytics Project (Databricks)
 
 **Welcome to the Data Lakehouse and Analytics Project repository! 🚀**
 
-This project demonstrates an end-to-end Databricks Lakehouse architecture, where data from multiple sources is ingested and transformed using PySpark and organized into Bronze, Silver, and Gold layers following the Medallion Architecture.
+This project demonstrates an **end-to-end Databricks Lakehouse architecture**, where data from multiple sources is ingested and transformed using PySpark and organized into Bronze, Silver, and Gold layers following the Medallion Architecture.
 The goal of this project is to build a scalable data pipeline that converts raw data into analytics-ready datasets for reporting and business insights.
 
 ---
