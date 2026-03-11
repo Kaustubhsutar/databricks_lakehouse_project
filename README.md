@@ -1,29 +1,38 @@
-# Data Warehouse and Analytics Project
+# Data Lakehouse and Analytics Project
 
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀  
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+**Welcome to the Data Lakehouse and Analytics Project repository! 🚀**
+
+This project demonstrates an end-to-end Databricks Lakehouse architecture, where data from multiple sources is ingested and transformed using PySpark and organized into Bronze, Silver, and Gold layers following the Medallion Architecture.
+The goal of this project is to build a scalable data pipeline that converts raw data into analytics-ready datasets for reporting and business insights.
 
 ---
+
 ## 🏗️ Data Architecture
-
-The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
-
 ![Data Architecture](docs/lakehouse_architecture_final.drawio.png)
 
-1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
-2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
-3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
+## Medallion Architecture
+
+This project follows the **Medallion Architecture**, which organizes data into three layers to progressively improve data quality and usability.
+
+1. **Bronze Layer** – Stores raw ingested data from source systems with minimal or no transformations.
+2. **Silver Layer** – Contains cleaned, standardized, and enriched data prepared for further analysis.
+3. **Gold Layer** – Provides business-ready datasets and aggregated tables optimized for reporting and analytics.
+
+This layered approach improves **data reliability, scalability, and maintainability** in modern lakehouse data platforms.
+: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
 ---
 ## 📖 Project Overview
 
 This project involves:
 
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
+- **Data Architecture:** Designing a modern Data Lakehouse using the Medallion Architecture with Bronze, Silver, and Gold layers.
+- **Data Pipelines:** Ingesting and transforming data from source systems into Databricks Delta Tables using PySpark.
+- **Data Workflow Orchestration:** Managing and scheduling data pipelines using Databricks Workflows to ensure automated and reliable data processing.
+- **Data Transformation:** Cleaning, standardizing, and enriching data to create reliable intermediate datasets.
+- **Analytics & Reporting:** Preparing business-ready data for analysis, reporting, and dashboarding.
  
-   ![Data Architecture](docs/data_model.png)
+   ![Data Model](docs/datalake_data_model.png)
 4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
 
 🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
@@ -40,38 +49,31 @@ This project involves:
 
 Everything is for Free!
 - **[Datasets](datasets/):** Access to the project dataset (csv files).
-- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Lightweight server for hosting your SQL database.
-- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
+- **[Databricks](https://www.databricks.com/):** Databricks is a unified data and AI platform that enables scalable data engineering, analytics, and machine learning on top of the Lakehouse architecture. 
 - **[Git Repository](https://github.com/):** Set up a GitHub account and repository to manage, version, and collaborate on your code efficiently.
 - **[DrawIO](https://www.drawio.com/):** Design data architecture, models, flows, and diagrams.
 
 ---
 
-## 🚀 Project Requirements
+## Tech Stack
 
-### Building the Data Warehouse (Data Engineering)
-
-#### Objective
-Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
-
-#### Specifications
-- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
-- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
-- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- **Scope**: Focus on the latest dataset only; historization of data is not required.
-- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+* **Databricks** – Data processing and lakehouse platform
+* **PySpark** – Data transformation and pipeline development
+* **Delta Lake** – Storage layer for reliable and scalable data management
+* **SQL** – Data querying and analysis
+* **Power BI** – Data visualization and reporting
 
 ---
 
-### BI: Analytics & Reporting (Data Analysis)
+## ▶️ Data Pipeline Workflow
 
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
+1. **Data Ingestion** – Raw data from CRM and ERP systems is ingested into the Bronze layer.
+2. **Bronze Layer** – Stores raw data in Delta tables with minimal transformations.
+3. **Silver Layer** – Data is cleaned, standardized, and enriched using PySpark transformations.
+4. **Gold Layer** – Business-ready datasets are created for analytics and reporting.
+5. **Analytics** – Gold layer tables are used for dashboards, reporting, and business insights.
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.  
+---
 
 ## 📂 Repository Structure
 ```
@@ -80,7 +82,7 @@ data-warehouse-project/
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
 ├── docs/                               # Project documentation and architecture details 
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
+│   ├── lakehouse_architecture.drawio   # Draw.io file shows the project's architecture
 │   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
 │   ├── data_integration.png            # Describes how tables are related
 │   ├── data_lineage.drawio             # Draw.io file for the data flow diagram
@@ -88,11 +90,10 @@ data-warehouse-project/
 │   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
 ├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-│   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
+│   ├── bronze/                         # Notebooks for extracting and loading raw data
+│   ├── silver/                         # Notebooks for cleaning and transforming data
+│   ├── gold/                           # Notebooks for creating analytical models
 │
-├── tests/                              # Test scripts and quality files
 │
 ├── README.md                           # Project overview and instructions
 ├── LICENSE                             # License information for the repository
