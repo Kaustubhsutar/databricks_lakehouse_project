@@ -19,7 +19,6 @@ This project follows the **Medallion Architecture**, which organizes data into t
 3. **Gold Layer** – Provides business-ready datasets and aggregated tables optimized for reporting and analytics.
 
 This layered approach improves **data reliability, scalability, and maintainability** in modern lakehouse data platforms.
-: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
 ---
 ## 📖 Project Overview
