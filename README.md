@@ -56,11 +56,12 @@ Everything is for Free!
 
 ## Tech Stack
 
-* **Databricks** – Data processing and lakehouse platform
-* **PySpark** – Data transformation and pipeline development
-* **Delta Lake** – Storage layer for reliable and scalable data management
-* **SQL** – Data querying and analysis
-* **Power BI** – Data visualization and reporting
+* **Databricks:** Data processing and lakehouse platform
+* **PySpark:** Data transformation and pipeline development
+* **Delta Lake:** Storage layer for reliable and scalable data management
+* **Unity Catalog:** Centralized governance and access control for data assets
+* **Spark SQL:** Data querying and analysis
+* **Power BI:** Data visualization and reporting
 
 ---
 
