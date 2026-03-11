@@ -89,11 +89,11 @@ data-warehouse-project/
 │   ├── data_models.drawio              # Draw.io file for data models (star schema)
 │   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Notebooks for extracting and loading raw data
+├── scripts/                            # Databricks notebooks for data pipelines and transformations
+│   ├── bronze/                         # Notebooks for ingesting and loading raw data
 │   ├── silver/                         # Notebooks for cleaning and transforming data
-│   ├── gold/                           # Notebooks for creating analytical models
-│
+│   ├── gold/                           # Notebooks for creating business-ready datasets
+│   ├── init_lakehouse.ipynb            # Notebook for initializing and orchestrating the lakehouse pipeline
 │
 ├── README.md                           # Project overview and instructions
 ├── LICENSE                             # License information for the repository
@@ -107,7 +107,7 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 ## 🌟 About Me
 
-Hi there! I'm **Kaustubh Sutar**. I’m a data enthusiast and aspiring data analyst skilled in Power BI, Excel, SQL, and Python, exploring Machine Learning & AI to turn data into actionable insights.
+Hi there! I'm Kaustubh Sutar, a data enthusiast and aspiring Data Analyst skilled in **Power BI, SQL, Python, and Excel**. I enjoy building data pipelines, analyzing datasets, and creating dashboards that turn raw data into actionable insights. I'm also exploring **Machine Learning and AI** to expand my analytical capabilities.
 
 Let's stay in touch! Feel free to connect with me on the following platforms:
 
