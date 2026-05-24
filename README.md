@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🌊 Data Lakehouse & Analytics Engineering Project  
-### Databricks Lakehouse Architecture | Medallion Architecture | PySpark ETL Pipelines | Delta Lake Analytics
+### Databricks Lakehouse Architecture | Medallion Architecture | PySpark ELT Pipelines | Delta Lake Analytics
 
 <p align="center">
 
@@ -24,7 +24,7 @@
 
 <img src="https://img.shields.io/badge/Architecture-Lakehouse-success?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Architecture-Medallion_Architecture-008080?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Workflow-ETL_Pipeline-FF8C00?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Workflow-ELT_Pipeline-FF8C00?style=for-the-badge"/>
 
 <br>
 
@@ -64,7 +64,7 @@ This repository is designed to demonstrate practical skills commonly required in
 - Data Engineering
 - Analytics Engineering
 - Data Analytics
-- ETL Development
+- ELT Development
 - Lakehouse Architecture
 - Business Intelligence
 
@@ -135,7 +135,7 @@ This project was designed to:
 | Objective | Description |
 |---|---|
 | Build a scalable Lakehouse architecture | Organize enterprise data using Medallion Architecture |
-| Develop ETL pipelines | Ingest and transform data using PySpark |
+| Develop ELT pipelines | Ingest and transform data using PySpark |
 | Enable workflow orchestration | Automate processing using Databricks Workflows |
 | Create analytics-ready datasets | Deliver curated Gold-layer tables |
 | Support business intelligence | Prepare data for dashboards and reporting |
