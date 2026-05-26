@@ -356,10 +356,9 @@ Planned enhancements for the project:
 
 ## 🌟 About Me
 
-Hi there! I'm **Kaustubh Sutar**, a data enthusiast and aspiring Data Analyst skilled in **Power BI, SQL, Python, Excel, PySpark, and Databricks**. I enjoy building scalable data pipelines, analyzing datasets, and creating dashboards that transform raw data into actionable business insights.
+Hi there! I'm **Kaustubh Sutar**, a data enthusiast and aspiring **Data Analyst & Data Engineer** skilled in **Power BI, SQL, Python, Excel, PySpark, and Databricks**. I enjoy building scalable data pipelines, analyzing datasets, and creating dashboards that transform raw data into actionable business insights.
 
-I’m also exploring **Machine Learning & AI** to expand my analytical and engineering capabilities.
-
+I also have growing interests in **Data Engineering, Machine Learning, and AI**, continuously exploring modern technologies to expand my analytical and engineering capabilities.
 Let's stay in touch! Feel free to connect with me on the following platforms:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kaustubh-sutar-814134340/)
